@@ -140,15 +140,15 @@ nav li a {
 
 .i-do-title {
     text-align: center;
-    width: 820px;
+    /* width: 820px; */
     margin: auto;
+    padding: 0 200px;
 }
 
 .skills {
     display: inline-block;
     width: 193px;
     padding: 22px;
-    /* background-color: rgba(211, 211, 211, 0.185); */
     margin-right: 16px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 2px rgba(211, 211, 211, 0.377);
@@ -156,8 +156,8 @@ nav li a {
 
 .skills-container {
     display: block;
-    margin: 100px 110px;
-    justify-content: space-around;
+    margin: 100px 100px;
+    justify-content: center;
 }
 
 .resume {
@@ -209,31 +209,198 @@ nav li a {
     color: #474747;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     margin-top: 100px;
     justify-content: space-around;
     background-color: #FFF8F3;
     padding: 100px 180px;
 }
-.footer-contact{
+
+.footer-contact {
     margin-right: 80px;
 }
-.footer-from input{
+
+.footer-from input {
     border: none;
     width: 330px;
     margin: 15px 0;
     height: 45px;
     border-radius: 5px;
 }
-.footer-from input::placeholder, textarea::placeholder{
+
+.footer-from input::placeholder,
+textarea::placeholder {
     padding: 10px;
     font-size: 15px;
 }
-.footer-from textarea{
+
+.footer-from textarea {
     border: none;
     margin: 15px 0;
-    /* height: 60px; */
     width: 330px;
     border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .about-section {
+        margin: 20px 0;
+        padding: 30px;
+    }
+
+    .about-info {
+        display: block;
+    }
+
+    .about-title {
+        margin-top: 20px;
+    }
+
+    .i-do-title {
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 10px;
+        justify-content: center;
+    }
+
+    .skills-container .skills {
+        width: 300px;
+        margin: 10px;
+    }
+
+    .resume-item {
+        display: block;
+    }
+
+    .resume-content {
+        width: 100%;
+    }
+
+    .resume-detail {
+        margin: 0;
+    }
+
+    .resume-content h3,
+    .resume h2 {
+        text-align: center;
+    }
+
+    .resume-detail,
+    .resume-dec {
+        text-align: center;
+    }
+
+    .resume-detail {
+        margin-right: 20px;
+    }
+
+    .footer-content {
+        display: block;
+        padding: 20px 20px;
+    }
+
+    .footer-from {
+        display: block;
+    }
+
+    .footer-from input {
+        border: none;
+        width: 90%;
+        margin: 15px 0;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    .footer-from textarea {
+        width: 90%;
+    }
+}
+
+
+@media screen and (min-width:576.1px) and (max-width:992px) {
+    .about-section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .about-info {
+        gap: 10px;
+    }
+
+    .about-title {
+        margin-top: 20px;
+    }
+
+    .i-do-title {
+        text-align: center;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 10px;
+        justify-content: space-evenly;
+    }
+
+    .skills-container .skills {
+        width: 250px;
+        margin: 10px;
+    }
+
+    .resume-item {
+        display: block;
+    }
+
+    .resume-content {
+        width: 100%;
+    }
+
+    .resume-detail {
+        margin: 0;
+    }
+
+    .resume-content h3,
+    .resume h2 {
+        text-align: center;
+    }
+
+    .resume-detail,
+    .resume-dec {
+        text-align: center;
+    }
+
+    .resume-detail {
+        margin-right: 20px;
+    }
+
+    .footer-content {
+        display: block;
+        padding: 20px 20px;
+    }
+
+    .footer-from input,
+    textarea {
+        display: block;
+        border: none;
+        width: 60%;
+        margin: 15px 0;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    .footer-from textarea {
+        width: 60%;
+    }
 }
